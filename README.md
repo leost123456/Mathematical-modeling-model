@@ -1,2 +1,2 @@
 # FIRST-ONE
-# 这是进行github联系的仓库 #
+# 这是进行github练习的仓库 #
