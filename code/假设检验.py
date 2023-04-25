@@ -11,8 +11,8 @@ import numpy as np
 from statsmodels.graphics.api import qqplot
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
-data_hpj1=pd.DataFrame(pd.read_excel('D:\\2022国赛数模练习题\\2022宁波大学数学建模暑期训练第一轮训练题B\\1组红葡萄.xlsx'))
-data_hpj2=pd.DataFrame(pd.read_excel('D:\\2022国赛数模练习题\\2022宁波大学数学建模暑期训练第一轮训练题B\\2组红葡萄.xlsx'))
+data_hpj1=pd.DataFrame(pd.read_excel('D:\\2022国赛数模练习题\\1组红葡萄.xlsx'))
+data_hpj2=pd.DataFrame(pd.read_excel('D:\\2022国赛数模练习题\\2组红葡萄.xlsx'))
 data_hpj1.drop('组别',axis=1,inplace=True)
 data_hpj2.drop('组别',axis=1,inplace=True)
 
@@ -33,7 +33,7 @@ for name in hpj1_columns: #选择那一组
     elif  a[1] <= 0.05 :
         judge1.append('no')
 data1=pd.DataFrame({'statistic':statistic1,'p_value1':p_value1,'yes or no':judge1})
-#data1.to_csv('D:\\2022国赛数模练习题\\2022宁波大学数学建模暑期训练第一轮训练题B\\红葡萄1组正态分布检验.csv',index=None)
+#data1.to_csv('D:\\2022国赛数模练习题\\红葡萄1组正态分布检验.csv',index=None)
 #第二种正态性检验方式：绘制QQ图
 qqplot(data_hpj1[hpj1_columns[0]], line='q', fit=True)
 plt.tick_params(size=5,labelsize = 13) #坐标轴
@@ -83,9 +83,9 @@ y = [17.7, 20.3, 20.0, 18.8, 19.0, 20.1, 20.0, 19.1]
 print('配对样本',ttest_rel(x, y))
 
 """data2=pd.DataFrame({'statistic':statistic2,'p_value1':p_value2,'yes or no':judge2})
-data2.to_csv('D:\\2022国赛数模练习题\\2022宁波大学数学建模暑期训练第一轮训练题B\\两组红葡萄方差齐性检验.csv',index=None)
+data2.to_csv('D:\\2022国赛数模练习题\\两组红葡萄方差齐性检验.csv',index=None)
 data3=pd.DataFrame({'statistic':statistic3,'p_value3':p_value3,'yes or no':judge3})
-data3.to_csv('D:\\2022国赛数模练习题\\2022宁波大学数学建模暑期训练第一轮训练题B\\红葡萄独立样本t检验结果.csv',index=None)
+data3.to_csv('D:\\2022国赛数模练习题\\红葡萄独立样本t检验结果.csv',index=None)
 """
 
 #Z检验（U检验）(用于总体方差已知，零假设是与均值相等，备选假设是与均值不相等)
