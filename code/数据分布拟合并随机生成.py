@@ -3,7 +3,7 @@ import numpy as np
 from fitter import Fitter
 import matplotlib.pyplot as plt
 from scipy.stats import t
-data=pd.read_csv('D:\\2022国赛数模练习题\\2022宁波大学数学建模暑期训练第五轮\\data\\转运商数据.csv',encoding='gbk')
+data=pd.read_csv('D:\\2022国赛数模练习题\\data\\转运商数据.csv',encoding='gbk')
 data_column=data.columns.tolist()
 
 #先观察下数据的分布
