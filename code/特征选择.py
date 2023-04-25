@@ -6,7 +6,7 @@ from sklearn.model_selection import cross_val_score
 import matplotlib.pyplot as plt
 
 #导入数据
-data=pd.read_csv('D:\\2022国赛数模练习题\\2022宁波大学数学建模暑期训练第一轮训练题B\\筛选后的白葡萄理化指标.csv',encoding='gbk')
+data=pd.read_csv('D:\\2022国赛数模练习题\\筛选后的白葡萄理化指标.csv',encoding='gbk')
 target_value=data.iloc[:,-1] #假设最后一个特征是因变量
 data=data.iloc[:,:-1]
 data.drop(columns='样品编号',inplace=True)
