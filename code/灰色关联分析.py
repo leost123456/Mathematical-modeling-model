@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-data=pd.read_csv('D:\\2022国赛数模练习题\\2022宁波大学数学建模暑期训练第四轮\\data\\附件2.csv',encoding='gbk')
+data=pd.read_csv('D:\\2022国赛数模练习题\\data\\附件2.csv',encoding='gbk')
 main_data=data['As (μg/g)'] #母序列
 data.drop(columns='编号',inplace=True,axis=1)
 data.drop(columns='As (μg/g)',inplace=True,axis=1)
