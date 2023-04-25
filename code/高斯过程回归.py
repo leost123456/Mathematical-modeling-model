@@ -6,7 +6,7 @@ from sklearn.gaussian_process.kernels import ConstantKernel, RBF,DotProduct,Whit
 from matplotlib import cm
 
 #导入数据
-data=pd.read_csv('D:\\2022国赛数模练习题\\2022宁波大学数学建模暑期训练第二轮训练题B\\贷款年利率与客户流失率关系.csv',encoding='gbk')
+data=pd.read_csv('D:\\2022国赛数模练习题\\贷款年利率与客户流失率关系.csv',encoding='gbk')
 x=data.iloc[:,0].values.reshape(-1,1) #注意要转化成二维的，相当于列向量
 y=data.iloc[:,1].values.reshape(-1,1)
 
