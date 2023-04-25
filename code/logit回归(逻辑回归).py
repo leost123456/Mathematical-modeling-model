@@ -13,7 +13,7 @@ from sklearn.multiclass import OneVsRestClassifier
 from sklearn.metrics import roc_curve, auc
 
 #读取数据（注意数据都已经正向化过了）
-df=pd.read_csv('D:\\2022国赛数模练习题\\2022宁波大学数学建模暑期训练第二轮训练题B\\有风险系数的有信贷信息企业.csv',encoding='gbk')
+df=pd.read_csv('D:\\2022国赛数模练习题\\有风险系数的有信贷信息企业.csv',encoding='gbk')
 #展现数据
 #print(df.head())
 
