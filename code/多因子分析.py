@@ -7,7 +7,7 @@ from factor_analyzer.factor_analyzer import calculate_bartlett_sphericity #Bartl
 from factor_analyzer.factor_analyzer import calculate_kmo #KMO检验
 
 #导入数据
-data=pd.read_csv('D:\\2022国赛数模练习题\\2022宁波大学数学建模暑期训练第四轮\\附件2.csv',encoding='gbk')
+data=pd.read_csv('D:\\2022国赛数模练习题\\附件2.csv',encoding='gbk')
 #剔除无用的列
 data.drop(columns='编号',inplace=True)
 
