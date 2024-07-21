@@ -19,7 +19,7 @@ for column in chemical_columns:
     mean=np.mean(data[column]) #计算每一列数据的均值
     std=np.std(data[column])#计算每一列数据的标准差
     result=stats.kstest(data[column],'norm',(mean,std))#主要的正态分布检验代码，p值大于0.05说明其符合正态分布
-    p_value_ks.append(result[0])
+    p_value_ks.append(result[1])
 
 #下面进行绘制pair图观察数据的分布状况(看是否符合线性相关的分布规律)
 """plt.figure(figsize=(8,6))
