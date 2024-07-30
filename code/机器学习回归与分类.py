@@ -28,9 +28,9 @@ import matplotlib.pyplot as plt
 
 #导入数据
 #训练集和验证集
-deal_data_y=pd.read_csv('D:\\2022国赛数模练习题\\2022宁波大学数学建模暑期训练第二轮训练题B\\处理后的有信贷信息的企业数据.csv',encoding='gbk')
+deal_data_y=pd.read_csv('D:\\2022国赛数模练习题\\处理后的有信贷信息的企业数据.csv',encoding='gbk')
 #预测集
-deal_data_w=pd.read_csv('D:\\2022国赛数模练习题\\2022宁波大学数学建模暑期训练第二轮训练题B\\处理后的无信贷信息的企业数据.csv',encoding='gbk')
+deal_data_w=pd.read_csv('D:\\2022国赛数模练习题\\处理后的无信贷信息的企业数据.csv',encoding='gbk')
 #先将无用的数据扔掉,columns=['信誉评级', '是否违约', '合格发票率', '年平均利润', '净发票总金额', '总盈利率', '月平均增长盈利率', '风险因子']
 store_data_y=copy.deepcopy(deal_data_w)
 deal_data_y.drop(['企业代号','企业名称'],axis=1,inplace=True)
